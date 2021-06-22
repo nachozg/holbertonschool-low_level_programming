@@ -1,11 +1,19 @@
 #include <stdio.h>
 /**
- * main - Print 0-9.
-(*description:0...9
-* Return: 0 on success
-*/
+ * main - program  print alphabet in lower.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	printf("0123456789\n");
-	return (0);
+	char n;
+for (n = 'a'; n <= 'z'; ++n)
+{
+	if (n != 'q' && n != 'e')
+ {
+	putchar(n);
+}
+}
+putchar('\n');
+return (0);
 }
