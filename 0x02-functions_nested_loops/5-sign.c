@@ -1,25 +1,25 @@
 #include "holberton.h"
+
 /**
- * main - check the code for Holberton students in.
- *
- * Return: Always 0.
+ * print_sign - evaluation of n
+ * Description: 0, + ir -
+ * @n: number evaluation
+ * Return: 0 if 0, + if greate than 0, - if less than 0
  */
 
-intprint_sign(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
 		_putchar('+');
 		return (1);
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		return (-1);
-	}
-	else
+	} else if (n == 0)
 	{
 		_putchar('0');
 		return (0);
+	} else if (n < 0)
+	{
+		_putchar('-');
 	}
+	return (-1);
 }
