@@ -1,24 +1,24 @@
-# incluye  " holberton.h "
+#include "holberton.h"
 
-/ * *
- * _memset - full memory with constant byte
-* @s: spaces memory to fully
-* @b: byte for complite
-* @n: number of the space to fully
- *
-* Return: pointer to memory area
- * /
+/**
+ * _strcat - concatenate two strings
+ * @dest: char string to concatenate to
+ * @src: char string
+ * Return: pointer to resulting string `dest`
+ */
 char *_strcat(char *dest, char *src)
 {
-	int z, h;
+	int i, c;
 
-	for (z = 0; dest[z] != '\0'; z++)
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+
+	for (c = 0; src[c] != '\0'; c++)
 	{
-	}
-	for (h = 0; src[h] != '\0'; h++, z++)
-	{
-		dest[z] = src[h];
+		dest[i] = src[c];
+		i++;
 	}
 
+	dest[i] = '\0';
 	return (dest);
 }
